@@ -698,7 +698,7 @@ Hybrid Cryptosystems - **VERY** Simplified
 
 ---
 
-![bg right:34% 80%](images/QR.png)
+![bg right:31% 80%](images/QR.png)
 # Thanks!
 Slides and Stuff: https://github.com/jakehildreth/PKIFoundations
 
@@ -707,5 +707,4 @@ Slides and Stuff: https://github.com/jakehildreth/PKIFoundations
 | LinkedIn | [/in/jakehildreth](https://linkedin.com/in/jakehildreth) | [/in/thetylerjacobs/](https://linkedin.com/in/thetylerjacobs/) |
 | GitHub | [jakehildreth](https://github.com/jakehildreth) | [ActiveDirectoryKC](https://github.com/ActiveDirectoryKC)  |
 | Reddit | **no.** | [/u/poolmanjim](https://reddit.com/u/poolmanjim) |
-| Blog | [blog.jakehildreth.com](https://blog.jakehildreth.com) | ??? |
-| Site | [jakehildreth.com](https://jakehildreth.com) | ??? | 
+| Site | [jakehildreth.com](https://jakehildreth.com) | [activedirectorykc.net](https://activedirectorykc.net)| 
