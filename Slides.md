@@ -148,25 +148,25 @@ In the beginning was the **pass**word...
 
 ![bg right:41% 100%](images/Confidential.jpg)
 # Confidentiality
-### Ensures a message is only readable by its intended recipient.
+Ensures a message is only readable by its intended recipient
 
 ---
 
 ![bg left:60%](images/Integra.jpg)
 # Integrity
-### Ensures a message has not been tampered with or changed.
+Ensures a message has not been tampered with or changed
 
 ---
 
 ![bg right:42%](images/Bart.jpg)
 # Non-Repudiation
-### Ensures an author cannot refute authorship of a message.
+Ensures an author cannot refute authorship of a message
 
 ---
 
 ![bg left:40% 110%](images/Popeye.jpg)
 # Authentication
-### Provides proof an author of a message is who they claim.
+Provides proof an author of a message is who they claim
 
 ---
 <!-- _class: lead -->
@@ -224,6 +224,11 @@ Secret or nah?
   - RSA
   - ECC
 </div>
+
+---
+<!-- _class: lead -->
+# **Encrypted data** ~~is~~ **should be**
+# **indistinguishable from random noise**
 
 ---
 
@@ -330,8 +335,8 @@ Encrypt with one & Decrypt with the other
 <div class='container'>
 <div class='col'>
 
-- Public Key ~= ROT7
-- Private Key ~= ROT19
+- Private Key ~= ROT7
+- Public Key ~= ROT19
 </div>
 
 <div class='col'>
@@ -358,7 +363,7 @@ Encrypt with one & Decrypt with the other
 # Example: Caesar Cipher (Asymmetric)
 | Original Message | Alice Encrypts (ROT7) | Encrypted Message | Bob Decrypts (ROT19) | Received Message |
 | - | - | - | - | - | 
-| Hello, Anti-Cast! | ![center w:300](images/PublicKey.png) | Olssv, Huap-Jhza! | ![center w:300](images/PrivateKey.png) | Hello, Anti-Cast! |
+| Hello, Anti-Cast! | ![center w:300](images/PrivateKey.png) | Olssv, Huap-Jhza! | ![center w:300](images/PublicKey.png) | Hello, Anti-Cast! |
 
 <sub>Try it yourself: https://rot13.com</sub>
 
@@ -471,9 +476,9 @@ the encrypted hash to Bob
 ---
 
 # Example: Caesar Cipher (Asymmetric) + Addition
-| Original Message + Hash | Alice Encrypts Hash (ROT19) | Original Message + Encrypted Hash | Bob Decrypts Hash (ROT7) | Received Message + Hash | Bob Hashes Message HImself |
+| Original Message + Hash | Alice Encrypts Hash (ROT7) | Original Message + Encrypted Hash | Bob Decrypts Hash (ROT19) | Received Message + Hash | Bob Hashes Message HImself |
 | - | - | - | - | - | - |
-| Hello, Anti-Cast! **0ACI** | ![center w:300](images/PrivateKey.png) | Hello, Anti-Cast! **0TVB** | ![center w:300](images/PublicKey.png) | Hello, Anti-Cast! **0ACI** | **0ACI** matches!|
+| Hello, Anti-Cast! **0ACI** | ![center w:300](images/PrivateKey.png) | Hello, Anti-Cast! **0HJP** | ![center w:300](images/PublicKey.png) | Hello, Anti-Cast! **0ACI** | **0ACI** matches!|
 
 ---
 
@@ -490,7 +495,7 @@ the encrypted hash to Bob
 - Public keys don't include identifying information
 * Certificates tell who owns a public key
 * Certificates provide basic **Authentication**
-* **If** you trust the signer, you can trust the public key
+* **If** you trust the issuer, you can trust the public key
 * Self-signed certs still permit encryption!
 </div>
 
@@ -508,17 +513,22 @@ the encrypted hash to Bob
 
 ---
 
-# Self-Signed Certificate Generation
-| Create a Key Pair | Create CSR | Hash CSR | Encrypt Hash with Alice's Priv Key| Package Certificate |
+# Generating a Self-Signed Certificate
+| Create a Key Pair | Create CSR | Hash the CSR | Encrypt CSR Hash with Alice's Private Key| Package Certificate |
 | - | - | - | - | - |
 | ![w:200](images/PrivateKey.png)<br>![w:200](images/PublicKey.png) | Subject: Alice<br>Public Key:<br>![w:100](images/PublicKey.png) | 0BHF | 0UAY |  Subject: Alice<br>Issuer: Alice<br>Public Key:<br>![w:100](images/PublicKey.png)<br>Signature<br>Algorithm: Silly<br>Signature: 0UAY |
 
 ---
 
 # Certification Authority (CA) Certificate Generation
-| Create a Key Pair | Create CSR | Hash CSR | Encrypt Hash with CA's Priv Key| Package Certificate |
+| Create a Key Pair | Create CSR | Hash the CSR | Encrypt CSR Hash with CA's Private Key| Package Certificate |
 | - | - | - | - | - |
 | ![w:200](images/PrivateKey.png)<br>![w:200](images/PublicKey.png) | Subject: Alice<br>Public Key:<br>![w:100](images/PublicKey.png) | 0BHF | 0KQO |  Subject: Alice<br>Issuer: CA<br>Public Key:<br>![w:100](images/PublicKey.png)<br>Signature<br>Algorithm: Silly<br>Signature: 0KQO |
+
+---
+
+# Validating a Certificate
+|
 
 ---
 
@@ -555,6 +565,27 @@ you can trust others that use the PKI
 - Users:
   - End Entities
   - Relying Parties
+</div>
+
+---
+
+<!-- _class: lead -->
+# **How Do I Know If I Should Trust a PKI?**
+
+---
+
+![bg right](images/Collin.gif)
+# How Do I Know If I Should Trust a PKI?
+
+---
+
+# How Do I Know If I Should Trust a PKI?
+- Mostly handled for you
+- OSes include lists of trusted roots
+- Active Directory (AD) networks have PKI: AD Certificate Services
+  * Drink!
+- Reputable PKIs publish their configurations and procedures
+- Honestly, something I need to dig into...
 
 ---
 
@@ -573,4 +604,3 @@ PGP/GPG, SSL/TLS, and more acronyms
 | BlueSky | @dotdot.horse |
 | Blog | blog.jakehildreth.com |
 | Site | jakehildreth.com |
-
