@@ -443,6 +443,19 @@ Max letter = 38
 <sub>Try it yourself: https://gchq.github.io/CyberChef
 
 ---
+# Real Example #2: Variable-Length -> Fixed Length
+1. Collisions can become a problem if your buffer is too small (e.g., MD*, SHA1).
+2. A extra benefit is knowable data lengths for data you don't need in plain-text (e.g., passwords)
+  - Banks! Stop. Making. Passwords. Limited. Just store the salted hash into a DB and forget my password. 
+
+| Input                                                                                            | Output (MD5)                     | Output SHA1                              |
+| ------------------------------------------------------------------------------------------------ | -------------------------------- | ---------------------------------------- |
+| The quick brown fox jumps over the laxy dog.                                                     | 1c6d98786bea70b9c34ce7f33201120c | 22b759d30862cc7c7eb3ce9616a9d4e853b1e14d |
+| The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. (x50)  | 18b94cc7a461d8774a384d8b82345e51 | d04c682f53e42e09abfd8a34e810ae9555be8ca4 |
+| The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. (x100) | 49f1e3a5cc2130d1b5698f5e220598e7 | 49a0f16e0a6c13f90269cfd4f2e7edc0c95fdf22 |
+
+
+---
 
 <!-- _class: lead -->
 # **Signing**
