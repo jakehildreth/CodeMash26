@@ -47,6 +47,21 @@ Locksmith, BlueTuxedo, PowerPUG!
 PowerShell + Identity & Access
 
 ---
+![bg right:40% 110%](images/PMJ-Family.jpg)
+```
+@{
+	Name = "Tyler Jacobs"
+	Alias = "Poolmanjim"
+	About = "Husband", "Boy Dad++", "Health Care Sysadmin"
+	ExperienceInYears = Get-Random -Minimum 15 -Maximum 20
+	JobTitle = "Principal Security Engineer - Directory Services"
+	Organization = "Undisclosed Health Care Organization"
+	Other = "Lead Moderator of r/ActiveDirectory Subreddit"
+	Website = "github.com/ActiveDirectoryKC"
+	Interests = "Identity", "Homelab", "TTRPG/Gaming"
+} 
+```
+---
 
 # Agenda
 <div class="container">
@@ -233,6 +248,13 @@ Secret or nah?
 - "Hello, Anti-Cast!" encoded:
 * EEEEEEEEEeEEeEEEEEEEEEEEEeeEEeEeEEEEEEEEEeeEeeEEEEEEEEEEEeeEeeEEEEEEEEEEEeeEeeeeEEEEEEEEEEeEeeEE EEEEEEEEEeEEEEEeEEEEEEEEEeeEeeeEEEEEEEEEEeeeEeEEEEEEEEEEEeeEeEEeEEEEEEEEEEeEeeEeEEEEEEEEEeEEEEeeEEEEEEEEEeeEEEEeEEEEEEEEEeeeEEeeEEEEEEEEEeeeEeEEEEEEEEEEEEeEEEEe
 <sub>Try it yourself: https://www.a.tools/Tool.php?Id=389</sub>
+---
+![bg right:42%](images/RosettaStone.svg)
+# Example: Rosetta Stone
+- Ancient Egyptian was indecipherable
+- Rosetta Stone showed Egyptian next to Greek
+- Allowed for translating / "decoding" the Egyptian.
+- Encoding can be mistaken for encryption - but once the method is known, it is trivial to break.
 ---
 
 <div class='container'>
@@ -494,6 +516,19 @@ Max letter = 38
 <sub>Try it yourself: https://gchq.github.io/CyberChef
 
 ---
+# Real Example #2: Variable-Length -> Fixed Length
+1. Collisions can become a problem if your buffer is too small (e.g., MD*, SHA1).
+2. A extra benefit is knowable data lengths for data you don't need in plain-text (e.g., passwords)
+  - Banks! Stop. Making. Passwords. Limited. Just store the salted hash into a DB and forget my password. 
+
+| Input                                                                                            | Output (MD5)                     | Output SHA1                              |
+| ------------------------------------------------------------------------------------------------ | -------------------------------- | ---------------------------------------- |
+| The quick brown fox jumps over the laxy dog.                                                     | 1c6d98786bea70b9c34ce7f33201120c | 22b759d30862cc7c7eb3ce9616a9d4e853b1e14d |
+| The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. (x50)  | 18b94cc7a461d8774a384d8b82345e51 | d04c682f53e42e09abfd8a34e810ae9555be8ca4 |
+| The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. (x100) | 49f1e3a5cc2130d1b5698f5e220598e7 | 49a0f16e0a6c13f90269cfd4f2e7edc0c95fdf22 |
+
+
+---
 
 <!-- _class: lead -->
 # **Signing**
@@ -510,7 +545,7 @@ Hashing + Asymmetric Encryption = Better Than Ink
 with her private key
 * Alice sends the message +
 the encrypted hash to Bob
-* Bob decrypts the hash of the message using Alice's private key
+* Bob decrypts the hash of the message using Alice's public key
 * Bob hashes the original message himself
 * If hashes match, Alice is the sender!
 
@@ -629,6 +664,7 @@ you can trust others that use the PKI
 # How Do I Know If I Should Trust a PKI?
 - Mostly handled for you
 - OSes include lists of trusted roots
+  - They're also usually out of date - Server 2025 GA included 7 Root CAs that were expired. 
 - Active Directory (AD) networks have PKI: AD Certificate Services
   * Drink!
 - Reputable PKIs publish their configurations and procedures
