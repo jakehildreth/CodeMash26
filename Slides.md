@@ -46,6 +46,21 @@ Locksmith, BlueTuxedo, PowerPUG!
 PowerShell + Identity & Access
 
 ---
+![bg right:40% 110%](images/PMJ-Family.jpg)
+```
+@{
+	Name = "Tyler Jacobs"
+	Alias = "Poolmanjim"
+	About = "Husband", "Boy Dad++", "Health Care Sysadmin"
+	ExperienceInYears = Get-Random -Minimum 15 -Maximum 20
+	JobTitle = "Principal Security Engineer - Directory Services"
+	Organization = "Undisclosed Health Care Organization"
+	Other = "Lead Moderator of r/ActiveDirectory Subreddit"
+	Website = "github.com/ActiveDirectoryKC"
+	Interests = "Identity", "Homelab", "TTRPG/Gaming"
+} 
+```
+---
 
 # Agenda
 <div class="container">
