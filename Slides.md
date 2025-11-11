@@ -4,7 +4,7 @@ transition: fade-out
 theme: default
 class: 
   - invert
-paginate: true
+header: <img src="images/SemperisLogo.png" height="30">
 backgroundColor: #000
 style: |
   .container{
@@ -24,6 +24,9 @@ style: |
   }
 ---
 
+<!-- _header: "" -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
 ![bg left](images/Foundation.jpg)
 # **PKI Foundations for Security Pros**
 
@@ -58,8 +61,28 @@ PowerShell + Identity & Access
 
 * Signing
 * Certificates
-* Public Key Infrastructute (PKI)
+* Public Key Infrastructure (PKI)
 * Real-World Uses
+</div>
+
+---
+
+# Non-Agenda
+<div class="container">
+<div class="col">
+
+* Cryptocurrency
+* Key Exchange
+* MAC/HMAC
+* Algorithms
+</div>
+
+<div class="col">
+
+* Cryptanalysis
+* Key Space
+* Steganography
+* AD CS
 </div>
 
 ---
@@ -84,6 +107,7 @@ In the beginning was the **pass**word...
 * 600 BCE: Hebrew Scholars
 * 400 BCE: Polybius Square
 * 300 BCE: Kama Sutra
+* 196 BCE: Rosetta Stone
 * 75 BCE: Caesar Cipher
 </div>
 <div class='col'>
@@ -209,9 +233,10 @@ Secret or nah?
 - Intended to remain secret
 * Yes! **Confidentiality**
 * Requires 1 or more "keys"
-* Keys are any secret data
+* Keys are **something** used to encrypt/decrypt
 * In modern cryptography, keys are
 **really** big numbers
+* Kerckhoffs's principle
 </div>
 
 <div class='col'>
@@ -224,6 +249,12 @@ Secret or nah?
   - RSA
   - ECC
 </div>
+
+---
+<!-- _class: lead -->
+# **Encrypted data is**
+# **indistinguishable from random noise**
+
 
 ---
 <!-- _class: lead -->
@@ -371,7 +402,7 @@ Encrypt with one & Decrypt with the other
 
 <!-- _class: lead -->
 # **Hash Functions**
-Subheading TBD
+Neither potatoes not pipes 
 
 ---
 
@@ -417,6 +448,13 @@ Subheading TBD
 
 <div class='col'>
 
+- HELLO
+  - 8+5+12+12+15
+  - Hash: **0052** or **00EB**
+</div>
+
+<div class='col'>
+
 * HELLOANTICAS**H**
   - 8+5+12+12+15+1+14+
   20+9+3+1+19+**8**
@@ -435,10 +473,11 @@ Max letter = 38
 ---
 
 # Real Examples: SHA1 & 2
-| Original | Hello, Anti-Cas*t*! | Hello, Anti-Cas*h*!
+| Original | SHA1 | SHA2-256 |
 | - | - | - |
-| SHA1 | 94bc685b3657b730ed72 696e036260d3fea8ab23 | 6d1ceba487b84474d554 599b24dea1fed95264ab |
-| SHA2-256 | a993f8f095c0c43348cd3 9fead7ec3fd4a26a53e889 d2a89e42adbdfde093398 | ea37a553bb16967a4545 b9f4fb11c19e9dfcdaf5ac 3f7fbdfa93a93f7cca145b |
+| Hello, Anti-Cast! | 94bc685b3657b730ed72 696e036260d3fea8ab23 | a993f8f095c0c43348cd39 fead7ec3fd4a26a53e889 d2a89e42adbdfde093398 |
+| Hello!            | 69342c5c39e5ae5f0077 aecc32c0f81811fb8193 | 334d016f755cd6dc58c53a 86e183882f8ec14f52fb0 5345887c8a5edd42c87b7 |
+| Hello, Anti-Cash! | 6d1ceba487b84474d554 599b24dea1fed95264ab | ea37a553bb16967a4545b9 f4fb11c19e9dfcdaf5ac3 f7fbdfa93a93f7cca145b |
 
 <sub>Try it yourself: https://gchq.github.io/CyberChef
 
@@ -540,11 +579,6 @@ the encrypted hash to Bob
 
 ---
 
-# Validating a Certificate
-|
-
----
-
 <!-- _class: lead -->
 # **Public Key Infrastructure (PKI)**
 Formalized trust - all the way down to the root
@@ -605,16 +639,43 @@ you can trust others that use the PKI
 
 <!-- _class: lead -->
 # **Real-World Uses**
-PGP/GPG, SSL/TLS, and more acronyms
+PGP/GPG and SSL/TLS - **VERY** Simplified
 
 ---
 
+# Pretty Good Privacy (PGP)/GNU Privacy Guard (GPG)
+## Encryption Process
+| Alice Writes a Message & Creates a Random Key | Alice Encrypts The Random Key With Bob's Public Key | Alice Encrypts the Message with the Random Key | Alice Combines the Encrypted Message and Key And Sends to Bob |
+| - | - | - | - | 
+| Message:<br>Hello, Anti-Cast!<br>Key:<br>4dyea1wo|Encrypted Key:<br>7tjtf57d|Encrypted Message:<br>Fcjjm, Ylrg-Ayqr!|Encrypted Message:<br>Fcjjm, Ylrg-Ayqr!<br>Encrypted Key:<br>7tjtf57d|
+
+---
+
+# PGP/GPG
+## Decryption Process
+| Bob Receives the Encrypted Package | Bob Decrypts The Random Key With His Private Key | Bob Decrypts the Message with the Random Key | 
+| - | - | - |
+|Encrypted Message:<br>Fcjjm, Ylrg-Ayqr!<br>Encrypted Key:<br>7tjtf57d|Decrypted Key:<br>4dyea1wo|Decrypted Message:<br>Hello, Anti-Cast!|
+
+---
+
+# Secure Sockets Layer (SSL)/Transport Layer Security (TLS)
+| Client Contacts Server via HTTPS | Server Sends Certificate for Client to Validate | Server and Client Agree on a Session Key (Diffie-Helman) | Data Stream is Encrypted with Session Key |
+| - | - | - | - |
+| https://dotdot.horse | Name:<br>dotdot.horse<br>Issuer:<br>CA<br>Signature:<br>Signature | ![h:250](images/DH.png) | ![h:250](images/Ciphertext.gif)
+
+---
+
+---
+
+![bg right:34% 80%](images/QR.png)
 # Thanks!
-![bg right:36% 80%](images/QR.png)
-| Find | Me! |
-| - | - |
-| Slides | github.com/jakehildreth/PKIFoundations |
-| LinkedIn | /in/jakehildreth |
-| BlueSky | @dotdot.horse |
-| Blog | blog.jakehildreth.com |
-| Site | jakehildreth.com |
+Slides and Stuff: https://github.com/jakehildreth/PKIFoundations
+
+| Find | Jake | Tyler |
+| - | - | - |
+| LinkedIn | [/in/jakehildreth](https://linkedin.com/in/jakehildreth) | [/in/thetylerjacobs/](https://linkedin.com/in/thetylerjacobs/) |
+| GitHub | [jakehildreth](https://github.com/jakehildreth) | [ActiveDirectoryKC](https://github.com/ActiveDirectoryKC)  |
+| Reddit | **no.** | [/u/poolmanjim](https://reddit.com/u/poolmanjim) |
+| Blog | [blog.jakehildreth.com](https://blog.jakehildreth.com) | ??? |
+| Site | [jakehildreth.com](https://jakehildreth.com) | ??? | 
