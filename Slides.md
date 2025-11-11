@@ -47,18 +47,30 @@ Locksmith, BlueTuxedo, PowerPUG!
 PowerShell + Identity & Access
 
 ---
-![bg right:40% 110%](images/PMJ-Family.jpg)
+
+<!-- _header: "" -->
+![bg left:40% 130%](images/PMJ-Family.jpg)
 ```
 @{
-	Name = "Tyler Jacobs"
-	Alias = "Poolmanjim"
-	About = "Husband", "Boy Dad++", "Health Care Sysadmin"
-	ExperienceInYears = Get-Random -Minimum 15 -Maximum 20
-	JobTitle = "Principal Security Engineer - Directory Services"
-	Organization = "Undisclosed Health Care Organization"
-	Other = "Lead Moderator of r/ActiveDirectory Subreddit"
-	Website = "github.com/ActiveDirectoryKC"
-	Interests = "Identity", "Homelab", "TTRPG/Gaming"
+    Name = 'Tyler Jacobs'
+    Alias = 'Poolmanjim'
+    About = @( 
+        'Husband',
+        'Boy Dad++',
+        'Health Care Sysadmin'
+    )
+    ExperienceInYears = Get-Random -Min 15 -Max 20
+    JobTitle = @(
+        'Principal Security Engineer',
+        'Directory Services'
+    )
+    Organization = 'Undisclosed Health Care Org'
+    Other = 'Lead Moderator of r/ActiveDirectory'
+    Interests = @(
+        'Identity',
+        'Homelab',
+        'TTRPG/Gaming'
+    )
 } 
 ```
 ---
@@ -197,7 +209,7 @@ Ensures a message is only readable by its intended recipient
 ---
 
 <!-- _header: "" -->
-![bg left:60%](images/Integra.jpg)
+![bg left:59%](images/Integra.jpg)
 # Integrity
 Ensures a message has not been tampered with or changed
 
@@ -249,7 +261,9 @@ Secret or nah?
 * EEEEEEEEEeEEeEEEEEEEEEEEEeeEEeEeEEEEEEEEEeeEeeEEEEEEEEEEEeeEeeEEEEEEEEEEEeeEeeeeEEEEEEEEEEeEeeEE EEEEEEEEEeEEEEEeEEEEEEEEEeeEeeeEEEEEEEEEEeeeEeEEEEEEEEEEEeeEeEEeEEEEEEEEEEeEeeEeEEEEEEEEEeEEEEeeEEEEEEEEEeeEEEEeEEEEEEEEEeeeEEeeEEEEEEEEEeeeEeEEEEEEEEEEEEeEEEEe
 <sub>Try it yourself: https://www.a.tools/Tool.php?Id=389</sub>
 ---
-![bg right:42%](images/RosettaStone.svg)
+
+<!-- _paginate: false -->
+![bg right:42%](images/RosettaStone.png)
 # Example: Rosetta Stone
 - Ancient Egyptian was indecipherable
 - Rosetta Stone showed Egyptian next to Greek
@@ -517,16 +531,18 @@ Max letter = 38
 
 ---
 # Real Example #2: Variable-Length -> Fixed Length
-1. Collisions can become a problem if your buffer is too small (e.g., MD*, SHA1).
-2. A extra benefit is knowable data lengths for data you don't need in plain-text (e.g., passwords)
-  - Banks! Stop. Making. Passwords. Limited. Just store the salted hash into a DB and forget my password. 
 
 | Input                                                                                            | Output (MD5)                     | Output SHA1                              |
 | ------------------------------------------------------------------------------------------------ | -------------------------------- | ---------------------------------------- |
-| The quick brown fox jumps over the laxy dog.                                                     | 1c6d98786bea70b9c34ce7f33201120c | 22b759d30862cc7c7eb3ce9616a9d4e853b1e14d |
-| The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. (x50)  | 18b94cc7a461d8774a384d8b82345e51 | d04c682f53e42e09abfd8a34e810ae9555be8ca4 |
-| The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. (x100) | 49f1e3a5cc2130d1b5698f5e220598e7 | 49a0f16e0a6c13f90269cfd4f2e7edc0c95fdf22 |
+| The quick brown fox jumps over the lazy dog.                                                     | 1c6d98786bea70b9<br>c34ce7f33201120c | 22b759d30862cc 7c7eb3ce9616a9 d4e853b1e14d |
+| The quick brown fox jumps over the lazy dog. (x100)  | 18b94cc7a461d8774<br>a384d8b82345e51 | d04c682f53e42e09<br>abfd8a34e810<br>ae9555be8ca4 |
+| The quick brown fox jumps over the lazy dog. (x200) | 49f1e3a5cc2130d1b<br>5698f5e220598e7 | 49a0f16e0a6c13f9<br>0269cfd4f2e7e<br>dc0c95fdf22 |
 
+<!--
+1. Collisions can become a problem if your buffer is too small (e.g., MD*, SHA1).
+2. A extra benefit is knowable data lengths for data you don't need in plain-text (e.g., passwords)
+  - Banks! Stop. Making. Passwords. Limited. Just store the salted hash into a DB and forget my password. 
+-->
 
 ---
 
@@ -725,18 +741,30 @@ Hybrid Cryptosystems - **VERY** Simplified
 
 * Hashing is not reversible
 * Signing combines hashing and encryption to provide non-repudiation
-* Certificates bind an identity to a public key
-* PKI solves a lot of problems... but at a cost
+* Certificates bind<br>an identity to a public key
+* PKI solves a lot of problems...<br>but at a cost
 * Most modern cryptosystems combine symmetric and asymmetric encryption, hashing, signing, and certificates!
 
 </div>
 
+---
+
+![bg right:31% 80%](images/Repo.png)
+# Resources
+https://github.com/jakehildreth/PKIFoundations
+
+# Links
+Cetacean Cipher: https://www.a.tools/Tool.php?Id=389
+CyberChef: https://gchq.github.io/CyberChef
+ROT13: https://rot13.com
+
+# Image Credits
+https://github.com/jakehildreth/PKIFoundations/blob/main/images/images.md
 
 ---
 
 ![bg right:31% 80%](images/QR.png)
-# Thanks!
-Slides and Stuff: https://github.com/jakehildreth/PKIFoundations
+# Thanks! 
 
 | Find | Jake | Tyler |
 | - | - | - |
