@@ -8,6 +8,7 @@
 | Shaggy.jpg | https://commons.wikimedia.org/wiki/File:Shaggy.jpg | https://www.flickr.com/people/adamj4282/, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons |
 | Popeye.jpg | https://commons.wikimedia.org/wiki/File:Popeye_el_marino.jpg | Elzie Chrisler Segar, Public domain, via Wikimedia Commons |
 | Dolphin.jpeg | https://commons.wikimedia.org/wiki/File:NMMP_dolphin_with_locator.jpeg | U.S. Navy photo by Photographer's Mate 1st Class Brien Aho., Public domain, via Wikimedia Commons |
+| RosettaStone.svg | https://en.wikipedia.org/wiki/Rosetta_Stone#/media/File:RosettaStoneAsPartOfOriginalStele_revised.svg | By A. Parrot - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=86100346 |
 | SymmetricKey.png | https://commons.wikimedia.org/wiki/File:Key-dynamic-gradient.png | Vijay Verma, CC0, via Wikimedia Commons |
 | PublicKey.png | https://commons.wikimedia.org/wiki/File:Key-dynamic-color.png | Vijay Verma, CC0, via Wikimedia Commons |
 | PrivateKey.png | https://commons.wikimedia.org/wiki/File:Key-dynamic-premium.png | Vijay Verma, CC0, via Wikimedia Commons |
