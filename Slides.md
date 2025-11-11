@@ -5,6 +5,8 @@ theme: default
 class: 
   - invert
 header: <img src="images/SemperisLogo.png" height="30">
+footer: Anti-Cast, 2025-11-12
+paginate: true
 backgroundColor: #000
 style: |
   .container{
@@ -92,6 +94,7 @@ In the beginning was the word...
 
 ---
 
+<!-- _paginate: false -->
 ![bg right](images/BigBang.svg)
 # **History**
 In the beginning was the **pass**word...
@@ -164,30 +167,36 @@ In the beginning was the **pass**word...
 </div>
 
 ---
+
+<!-- _header: "" -->
 <!-- _class: lead -->
 ![bg left](images/GoalPosts.jpg)
 # **Goals of Cryptography**
 
 --- 
 
+<!-- _paginate: false -->
 ![bg right:41% 100%](images/Confidential.jpg)
 # Confidentiality
 Ensures a message is only readable by its intended recipient
 
 ---
 
+<!-- _header: "" -->
 ![bg left:60%](images/Integra.jpg)
 # Integrity
 Ensures a message has not been tampered with or changed
 
 ---
 
+<!-- _paginate: false -->
 ![bg right:42%](images/Bart.jpg)
 # Non-Repudiation
 Ensures an author cannot refute authorship of a message
 
 ---
 
+<!-- _header: "" -->
 ![bg left:40% 110%](images/Popeye.jpg)
 # Authentication
 Provides proof an author of a message is who they claim
@@ -219,6 +228,7 @@ Secret or nah?
 
 ---
 
+<!-- _paginate: false -->
 ![bg right:42%](images/Dolphin.jpeg)
 # Example: Cetacean Cipher
 - "Hello, Anti-Cast!" encoded:
@@ -251,6 +261,7 @@ Secret or nah?
 </div>
 
 ---
+
 <!-- _class: lead -->
 # **Encrypted data is**
 # **indistinguishable from random noise**
@@ -263,6 +274,8 @@ Secret or nah?
 
 ---
 
+<!-- _header: "" -->
+<!-- _paginate: false -->
 ![bg](images/Ciphertext.gif)
 
 ---
@@ -608,6 +621,7 @@ you can trust others that use the PKI
 
 ---
 
+<!-- _paginate: false -->
 ![bg right](images/Collin.gif)
 # How Do I Know If I Should Trust a PKI?
 
@@ -625,7 +639,7 @@ you can trust others that use the PKI
 
 <!-- _class: lead -->
 # **Real-World Uses**
-PGP/GPG and SSL/TLS - **VERY** Simplified
+Hybrid Cryptosystems - **VERY** Simplified
 
 ---
 
@@ -651,6 +665,37 @@ PGP/GPG and SSL/TLS - **VERY** Simplified
 | https://dotdot.horse | Name:<br>dotdot.horse<br>Issuer:<br>CA<br>Signature:<br>Signature | ![h:250](images/DH.png) | ![h:250](images/Ciphertext.gif)
 
 ---
+
+<!-- _class: lead -->
+# **Quick Review**
+
+---
+
+# Quick Review
+<div class='container'>
+<div class='col'>
+
+* Humans have wanted to hide things **forever**
+* Encoding is reversible **w/o keys**
+* Encryption is reversible **with keys**
+  * Symmetric Encryption:
+    - Uses 1 key
+    - FAST
+  * Asymmetric Encryption:
+    - Uses 2+ keys
+    - SLOW
+</div>
+
+<div class='col'>
+
+* Hashing is not reversible
+* Signing combines hashing and encryption to provide non-repudiation
+* Certificates bind an identity to a public key
+* PKI solves a lot of problems... but at a cost
+* Most modern cryptosystems combine symmetric and asymmetric encryption, hashing, signing, and certificates!
+
+</div>
+
 
 ---
 
