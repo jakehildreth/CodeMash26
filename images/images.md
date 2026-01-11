@@ -1,7 +1,6 @@
 | Image Name | Source | Credit |
 |-|-|-|
-| LegoLocks.webp | https://beta.ideas.lego.com/product-ideas/40434532-eaa1-4926-8621-362969385481 | Author: 
-FlamboyantBadger073 |
+| LegoLocks.webp | https://beta.ideas.lego.com/product-ideas/40434532-eaa1-4926-8621-362969385481 | Author: FlamboyantBadger073 |
 | BigBang.png | https://commons.wikimedia.org/wiki/File:History_of_the_Universe_EN.svg | Woudloper, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons | 
 | GoalPosts.jpg | https://en.wikipedia.org/wiki/Goal_(sports)#/media/File:The_Posts_-_geograph.org.uk_-_116024.jpg | By Keith Williamson, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=9281153 |
 | Confidential.jpg | https://commons.wikimedia.org/wiki/File:Confidential_Magazine_cover_January_1954_-_Tallulah_Bankhead.jpg | Confidential (magazine), Public domain, via Wikimedia Commons |
