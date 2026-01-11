@@ -1,8 +1,8 @@
-# PKIFoundations
-Notes, slides, and other resources from Jake & Tyler's presentation @ Anti-Cast, November 2025: "PKI Foundations for Security Pros"
+# PKI Unlocked:<br>A No-Math Primer for Builders
+Notes, slides, and other resources from Jake's presentation @ CodeMash 2026
 
 # Slides
-https://raw.github.com/jakehildreth/PKIFoundations/main/Slides.pdf
+https://raw.github.com/jakehildreth/CodeMash26/main/Slides.pdf
 
 # Links and Sites
 * Cetacean Cipher: https://www.a.tools/Tool.php?Id=389

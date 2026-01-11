@@ -5,7 +5,7 @@ theme: default
 class: 
   - invert
 header: <img src="images/SemperisLogo.png" height="30">
-footer: Anti-Cast, 2025-11-12
+footer: CodeMash 2026-01-15 · Jake Hildreth · jakehildreth.com
 paginate: true
 backgroundColor: #000
 style: |
@@ -29,50 +29,24 @@ style: |
 <!-- _header: "" -->
 <!-- _footer: "" -->
 <!-- _paginate: false -->
-![bg left](images/Foundation.jpg)
-# **PKI Foundations for Security Pros**
+![bg left](images/LegoLocks.webp)
+# PKI Unlocked:<br>**A No-Math Primer for Builders**
 
-## Jake Hildreth<br>w/ Tyler Jacobs
+### Jake Hildreth<br>[jakehildreth.com](https://jakehildreth.com)
+<br>
 
-Anti-Cast, 2025-11-12
+Code Mash 2026-01-15
+![w:200](images/codemash-logo.png)
 
 ---
 ![bg right:40% 110%](images/Family.png)
 # `Get-ADUser -Identity ‘Jake Hildreth’`
 * Husband, Dad, Recovering Sysadmin
 * Principal Security Consultant @ Semperis
-* Open-source Toolmaker:
-Locksmith, BlueTuxedo, PowerPUG!
+* Open-source Toolmaker
 * Microsoft MVP:
 PowerShell + Identity & Access
 
----
-
-<!-- _header: "" -->
-![bg left:40% 130%](images/PMJ-Family.jpg)
-```
-@{
-    Name = 'Tyler Jacobs'
-    Alias = 'Poolmanjim'
-    About = @( 
-        'Husband',
-        'Boy Dad++',
-        'Health Care Sysadmin'
-    )
-    ExperienceInYears = Get-Random -Min 15 -Max 20
-    JobTitle = @(
-        'Principal Security Engineer',
-        'Directory Services'
-    )
-    Organization = 'Undisclosed Health Care Org'
-    Other = 'Lead Moderator of r/ActiveDirectory'
-    Interests = @(
-        'Identity',
-        'Homelab',
-        'TTRPG/Gaming'
-    )
-} 
-```
 ---
 
 # Agenda
@@ -135,22 +109,22 @@ Humans have been hiding communications/ideas for over 4 thousand years
 <div class='col'>
 
 ## Antiquity
-* 1900 BCE: Non-Standard Hieroglyphs
-* 1500 BCE: Clay Tablets
-* 600 BCE: Hebrew Scholars
-* 400 BCE: Polybius Square
-* 300 BCE: Kama Sutra
-* 196 BCE: Rosetta Stone
-* 75 BCE: Caesar Cipher
+- 1900 BCE: Non-Standard Hieroglyphs
+- 1500 BCE: Clay Tablets
+- 600 BCE: Hebrew Scholars
+- 400 BCE: Polybius Square
+- 300 BCE: Kama Sutra
+- 196 BCE: Rosetta Stone
+- 75 BCE: Caesar Cipher
 </div>
 <div class='col'>
 
 ## Medieval
-* 750-800 CE: Arabic Scholars
-* 800-1100 CE: English Scribes
-* 1400 CE: Arabic Scholars
-* 1500s CE: Tabula Recta/Vignère Cipher
-* 1626 CE: Antoine Rossignol
+- 750-800 CE: Arabic Scholars
+- 800-1100 CE: English Scribes
+- 1400 CE: Arabic Scholars
+- 1500s CE: Tabula Recta/Vignère Cipher
+- 1626 CE: Antoine Rossignol
 </div>
 
 <!--
@@ -174,17 +148,17 @@ Antoine Rossignol: Created the Great Cipher, which remained unsolved for 350+ ye
 <div class='col'>
 
 ## Pre-WWII
-* Focus on Cryptanalysis
-* Many Medieval Systems Broken
-* First Cryptographic Machines
-* First One Time Pad
+- Focus on Cryptanalysis
+- Many Medieval Systems Broken
+- First Cryptographic Machines
+- First One Time Pad
 </div>
 <div class='col'>
 
 ## WWII
-* Allies:
+- Allies:
   - TypeX, SIGABA, Lacida
-* Axis:
+- Axis:
   - Enigma, Purple, SG-41
 </div>
 
@@ -195,20 +169,20 @@ Antoine Rossignol: Created the Great Cipher, which remained unsolved for 350+ ye
 <div class='container'>
 <div class='col'>
 
-* 1950s: Claude Shannon
-* 1975: Data Encryption Standard (DES)
-* 1976: Diffie-Hellman (DH)
-* 1977: Rivest, Shamir, Adelman (RSA)
-* 1989: Message Digest Algorithms (MD*)
-* 1991: Digital Signature Algorithm (DSA)
+- 1950s: Claude Shannon
+- 1975: Data Encryption Standard (DES)
+- 1976: Diffie-Hellman (DH)
+- 1977: Rivest, Shamir, Adelman (RSA)
+- 1989: Message Digest Algorithms (MD*)
+- 1991: Digital Signature Algorithm (DSA)
 
 </div>
 <div class='col'>
 
-* 1995: Secure Hash Algorithms (SHA)
-* 1985-2004: Elliptic Curve Cryptography (ECC)
-* 2001: Advanced Encryption Standard (AES)
-* The Future: Post-Quantum Cryptography (PQC)
+- 1995: Secure Hash Algorithms (SHA)
+- 1985-2004: Elliptic Curve Cryptography (ECC)
+- 2001: Advanced Encryption Standard (AES)
+- The Future: Post-Quantum Cryptography (PQC)
 </div>
 
 <!--
@@ -300,13 +274,9 @@ Secret or nah?
 <!-- _paginate: false -->
 ![bg right:42%](images/Dolphin.jpeg)
 # Example: Cetacean Cipher
-- "Hello, Anti-Cast!" encoded:
-* EEEEEEEEEeEEeEEEEEEEEEEEEeeEEeEeEEEEEEEEEeeEeeEEEEEEEEEEEeeEeeEEEEEEEEEEEeeEeeeeEEEEEEEEEEeEeeEE EEEEEEEEEeEEEEEeEEEEEEEEEeeEeeeEEEEEEEEEEeeeEeEEEEEEEEEEEeeEeEEeEEEEEEEEEEeEeeEeEEEEEEEEEeEEEEeeEEEEEEEEEeeEEEEeEEEEEEEEEeeeEEeeEEEEEEEEEeeeEeEEEEEEEEEEEEeEEEEe
-<sub>Try it yourself: https://www.a.tools/Tool.php?Id=389</sub>
-
-<!--
-Next Slide: Tyler
--->
+- "Hello, CodeMash!" encoded:
+* EEEEEEEEEeEEeEEEEEEEEEEEEeeEEeEeEEEEEEEEEeeEeeEEEEEEEEEEEeeEeeEEEEEEEEEEEeeEeeeeEEEEEEEEEEeEeeEE EEEEEEEEEeEEEEeeEEEEEEEEEeeEeeeeEEEEEEEEEeeEEeEEEEEEEEEEEeeEEeEeEEEEEEEEEeEEeeEeEEEEEEEEEeeEEEEeEEEEEEEEEeeeEEeeEEEEEEEEEeeEeEEEEEEEEEEEEEeEEEEe
+<sub>Try it yourself: [www.a.tools/Tool.php?Id=389](https://www.a.tools/Tool.php?Id=389)</sub>
 
 ---
 
@@ -335,10 +305,10 @@ Next Slide: Tyler
 <div class='col'>
 
 # Common Schemes
-- Symmetric - 1 key
+* Symmetric - 1 key
   - DES
   - AES
-- Asymmetric - 2+ keys
+* Asymmetric - 2+ keys
   - RSA
   - ECC
 </div>
@@ -374,19 +344,23 @@ Pretty much all cryptography before the 1970s
 
 ## Pros
 * Same key to encrypt/decrypt message
-= Easy to understand
+  - Easy to understand
 * Simple algorithms
-= Very fast
+  - Very fast
+* Provides **Confidentiality**
 </div>
 
 <div class='col'>
 
 ## Cons
 * Keys must be pre-shared via a secure channel before communication
-= Difficult!
+  - Difficult!
 * One key per communication group
-= Key management becomes untenable
-* Does not protect Integrity, ensure Non-repudiation, or enable Authentication
+  - Key management nightmare
+* Does not:
+  * protect **Integrity**
+  * ensure **Non-Repudiation**
+  * enable **Authentication**
 </div>
 
 ---
@@ -400,7 +374,6 @@ Pretty much all cryptography before the 1970s
 </div>
 
 <div class='col'>
-
 
 - A(1) + Shift(13) = N(14)
 - N(14) + Shift(13) = A(1)
@@ -422,14 +395,15 @@ Pretty much all cryptography before the 1970s
 # Example: Caesar Cipher (Symmetric)
 | Original Message | Alice Encrypts (ROT13) | Encrypted Message | Bob Decrypts (ROT13) | Received Message |
 | - | - | - | - | - | 
-| Hello, Anti-Cast! | ![center w:300](images/SymmetricKey.png) | Olssv, Huap-Jhza! | ![center w:300](images/SymmetricKey.png) | Hello, Anti-Cast! |
+| Hello, CodeMash! | ![center w:300](images/SymmetricKey.png) | Uryyb, PbqrZnfu! | ![center w:300](images/SymmetricKey.png) | Hello, CodeMash! |
 
 <sub>Try it yourself: https://rot13.com</sub>
 
 ---
 <!-- _class: lead -->
 # **Asymmetric Encryption**
-Encrypt with one & Decrypt with the other
+Encrypt with one key
+Decrypt with a different key
 
 ---
 
@@ -438,10 +412,10 @@ Encrypt with one & Decrypt with the other
 <div class='col'>
 
 ## Pros
-* One **key pair** (public + private) per user
-= Easy(ish) to manage
+* One **key pair** (public + private)<br>per user
+  - Easy(ish) to manage
 * Public keys can be shared over insecure channel
-= Much easier than secure channel
+  - Much easier than secure channel
 * Provides **Confidentiality**, **Integrity**,
 **Non-repudiation**
 
@@ -451,9 +425,9 @@ Encrypt with one & Decrypt with the other
 
 ## Cons
 * Complicated algorithms
-= Not fast
-* No verification of other side
-= Impersonation possible
+  - Not fast
+* No **Authentication** of sender's identity
+  - Impersonation is possible
 </div>
 
 ---
@@ -490,7 +464,7 @@ Encrypt with one & Decrypt with the other
 # Example: Caesar Cipher (Asymmetric)
 | Original Message | Alice Encrypts (ROT7) | Encrypted Message | Bob Decrypts (ROT19) | Received Message |
 | - | - | - | - | - | 
-| Hello, Anti-Cast! | ![center w:300](images/PrivateKey.png) | Olssv, Huap-Jhza! | ![center w:300](images/PublicKey.png) | Hello, Anti-Cast! |
+| Hello, CodeMash! | ![center w:300](images/PrivateKey.png) | Olssv, JvklThzo! | ![center w:300](images/PublicKey.png) | Hello, CodeMash! |
 
 <sub>Try it yourself: https://rot13.com</sub>
 
@@ -502,7 +476,7 @@ Next few Slides: Tyler
 
 <!-- _class: lead -->
 # **Hash Functions**
-Neither potatoes not pipes 
+Neither potatoes nor pipes 
 
 ---
 
@@ -510,7 +484,7 @@ Neither potatoes not pipes
 <div class='col'>
 
 # Hash Functions
-- Maps any data to a (probably) unique fixed-length value
+- Maps any data to a (hopefully) unique fixed-length value
 - Can't be easily reversed to discover source data
 - Changing even a single bit of source data changes the hash
 - Ensures **Integrity**
@@ -527,8 +501,9 @@ Neither potatoes not pipes
 </div>
 
 ---
+<!-- _footer: "" -->
 
-# Silly Example: Addition
+# Silly Example: Addition + LeftPad
 | Original | A | B | C | D | E | F | G | H | I | J | K | L | M | 
 | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | **Value** | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
@@ -540,25 +515,26 @@ Neither potatoes not pipes
 <div class='container'>
 <div class='col'>
 
-- HELLOANTICAS**T**
-  - 8+5+12+12+15+1+14+
-  20+9+3+1+19+**20**
-  - Hash: **0139** or **0ACI**
+- HELLOCODEMAS*H*
+  - 8+5+12+12+15+
+  3+15+4+*5* = 
+  - Hash: **0079** or **00GI**
 </div>
 
 <div class='col'>
 
 - HELLO
   - 8+5+12+12+15
-  - Hash: **0052** or **00EB**
+  - Hash:
+  **0052** or **00EB**
 </div>
 
 <div class='col'>
 
-* HELLOANTICAS**H**
-  - 8+5+12+12+15+1+14+
-  20+9+3+1+19+**8**
-  - Hash: **0127** or **0ABG**
+* HELLOCODEMAS*T*
+  - 8+5+12+12+15+
+  3+15+4+*20* = 
+  - Hash: **0094** or **00ID**
 </div>
 
 </div>
@@ -572,23 +548,24 @@ Max letter = 38
 
 ---
 
-# Real Examples: SHA1 & 2
-| Original | SHA1 | SHA2-256 |
-| - | - | - |
-| Hello, Anti-Cast! | 94bc685b3657b730ed72 696e036260d3fea8ab23 | a993f8f095c0c43348cd39 fead7ec3fd4a26a53e889 d2a89e42adbdfde093398 |
-| Hello!            | 69342c5c39e5ae5f0077 aecc32c0f81811fb8193 | 334d016f755cd6dc58c53a 86e183882f8ec14f52fb0 5345887c8a5edd42c87b7 |
-| Hello, Anti-Cash! | 6d1ceba487b84474d554 599b24dea1fed95264ab | ea37a553bb16967a4545b9 f4fb11c19e9dfcdaf5ac3 f7fbdfa93a93f7cca145b |
+# Real Example #1: Single Character Change
+| Original | SHA1 |
+| - | - |
+| Hello, CodeMas*h*! | `4edf8a86e11c4adbf7839e9940666ce882f563cc` |
+| Hello, CodeMas*t*! | `2d6ea1719370b90fab69e08bc5dea3bd7c77b4e6` |
 
 <sub>Try it yourself: https://gchq.github.io/CyberChef
 
 ---
 # Real Example #2: Variable-Length -> Fixed Length
 
-| Input                                                                                            | Output (MD5)                     | Output SHA1                              |
-| ------------------------------------------------------------------------------------------------ | -------------------------------- | ---------------------------------------- |
-| The quick brown fox jumps over the lazy dog.                                                     | 1c6d98786bea70b9<br>c34ce7f33201120c | 22b759d30862cc 7c7eb3ce9616a9 d4e853b1e14d |
-| The quick brown fox jumps over the lazy dog. (x100)  | 18b94cc7a461d8774<br>a384d8b82345e51 | d04c682f53e42e09<br>abfd8a34e810<br>ae9555be8ca4 |
-| The quick brown fox jumps over the lazy dog. (x200) | 49f1e3a5cc2130d1b<br>5698f5e220598e7 | 49a0f16e0a6c13f9<br>0269cfd4f2e7e<br>dc0c95fdf22 |
+| Original | SHA1 |
+| - | - |
+| The quick brown fox jumps over the lazy dog. | `408d94384216f890ff7a0c3528e8bed1e0b01621` |
+| The quick brown fox jumps over the lazy dog. (x100) | `b09876f717b413763e960238754c6f22d2143ac2` |
+| The quick brown fox jumps over the lazy dog. (x200) | `1f75bf99415e85c75fde244ec71de7f5e2d226ba` |
+
+<sub>Try it yourself: https://gchq.github.io/CyberChef
 
 <!--
 1. Collisions can become a problem if your buffer is too small (e.g., MD*, SHA1).
@@ -608,13 +585,14 @@ Hashing + Asymmetric Encryption = Better Than Ink
 <div class='col'>
 
 # Signing Process
-* Alice creates a hash of a message
+* Alice creates a message
+* Alice creates a hash of her message
 * Alice encrypts **the hash**
-with her private key
-* Alice sends the message +
-the encrypted hash to Bob
-* Bob decrypts the hash of the message using Alice's public key
-* Bob hashes the original message himself
+with her **private** key
+* Alice sends package to Bob
+* Bob simultaneously:
+  * decrypts hash w/ Alice's **public** key
+  * hashes the original message
 * If hashes match, Alice is the sender!
 
 </div>
@@ -629,16 +607,16 @@ the encrypted hash to Bob
 
 ---
 
-# Example: Caesar Cipher (Asymmetric) + Addition
-| Original Message + Hash | Alice Encrypts Hash (ROT7) | Original Message + Encrypted Hash | Bob Decrypts Hash (ROT19) | Received Message + Hash | Bob Hashes Message HImself |
+# Example: Addition (Hashing) + Caesar Cipher (Asymmetric Encryption)
+| Original Message + Hash | Alice Encrypts Hash (ROT7) | Original Message + Encrypted Hash | Bob Decrypts Hash (ROT19) | Original Message + Decrypted Hash | Bob Hashes Message HImself |
 | - | - | - | - | - | - |
-| Hello, Anti-Cast! **0ACI** | ![center w:300](images/PrivateKey.png) | Hello, Anti-Cast! **0HJP** | ![center w:300](images/PublicKey.png) | Hello, Anti-Cast! **0ACI** | **0ACI** matches!|
+| "Hello, CodeMash!" Hash: **00GI** | ![center w:300](images/PrivateKey.png) | "Hello, CodeMash!" Encrypted Hash: **00TV** | ![center w:300](images/PublicKey.png) | "Hello, CodeMash!" Decrypted Hash: **00GI** | "Hello, CodeMash!" Hash: **00GI** MATCH!|
 
 ---
 
 <!-- _class: lead -->
 # **Certificates**
-(Public Key + Attributes) Signed
+Public Key and Attributes, Signed... by someone!
 
 ---
 
@@ -656,28 +634,28 @@ the encrypted hash to Bob
 <div class='col'>
 
 # Typical Contents
-- Subject
-- Issuer
-- Public Key
-- Not Before/Not After
-- Key Usage/Extended Key Usage
-- Signature Algorithm/Signature
-- Serial Number
+* Subject
+* Issuer
+* Public Key
+* Not Before/Not After
+* Key Usage/Extended Key Usage
+* Signature Algorithm/Signature
+* Serial Number
 </div>
 
 ---
 
 # Generating a Self-Signed Certificate
-| Create a Key Pair | Create CSR | Hash the CSR | Encrypt CSR Hash with Alice's Private Key| Package Certificate |
+| Create a Key Pair | Create CSR | Hash the CSR | Encrypt Hash w/ Alice's Private Key| Package Certificate |
 | - | - | - | - | - |
-| ![w:200](images/PrivateKey.png)<br>![w:200](images/PublicKey.png) | Subject: Alice<br>Public Key:<br>![w:100](images/PublicKey.png) | 0BHF | 0UAY |  Subject: Alice<br>Issuer: Alice<br>Public Key:<br>![w:100](images/PublicKey.png)<br>Signature<br>Algorithm: Silly<br>Signature: 0UAY |
+| ![w:100](images/PrivateKey.png)<br>![w:100](images/PublicKey.png) | Subject: Alice<br>Public Key:![w:100](images/PublicKey.png) | 0BHF | 0UAY |  Subject: Alice<br>Issuer: **Alice**<br>Public Key:<br>![w:100](images/PublicKey.png)<br>Signature<br>Algorithm: Silly Signature: 0UAY |
 
 ---
 
 # Certification Authority (CA) Certificate Generation
-| Create a Key Pair | Create CSR | Hash the CSR | Encrypt CSR Hash with CA's Private Key| Package Certificate |
+| Create a Key Pair | Create CSR | Hash the CSR | Encrypt Hash w/ **CA**'s Private Key| Package Certificate |
 | - | - | - | - | - |
-| ![w:200](images/PrivateKey.png)<br>![w:200](images/PublicKey.png) | Subject: Alice<br>Public Key:<br>![w:100](images/PublicKey.png) | 0BHF | 0KQO |  Subject: Alice<br>Issuer: CA<br>Public Key:<br>![w:100](images/PublicKey.png)<br>Signature<br>Algorithm: Silly<br>Signature: 0KQO |
+| ![w:100](images/PrivateKey.png)<br>![w:100](images/PublicKey.png) | Subject: Alice<br>Public Key:<br>![w:100](images/PublicKey.png) | 0BHF | 0KQO | Subject: Alice<br>Issuer: **CA**<br>Public Key:<br>![w:100](images/PublicKey.png)<br>Signature<br>Algorithm: Silly<br>Signature: 0KQO |
 
 ---
 
@@ -692,28 +670,28 @@ Formalized trust - all the way down to the root
 
 # PKI Basics
 - Not **just** technology:
-  - Hardware
-  - Software
-  - Policies
-  - Procedures
-- "Chains" of trust lead back to a
+  * Hardware
+  * Software
+  * Policies
+  * Procedures
+* "Chains" of trust lead back to a
 "root" of trust
-- **If** you trust the PKI (big if),
+* **If** you trust the PKI (big if),
 you can trust others that use the PKI
 </div>
 
 <div class='col'>
 
 # Common Components
-- Authorities:
-  - Root/Intermediate/Issuing
-  - Validation
-  - Registration
-  - Policy
-  - Timestamp
-- Users:
-  - End Entities
-  - Relying Parties
+* Authorities:
+  * Root/Intermediate/Issuing
+  * Validation
+  * Registration
+  * Policy
+  * Timestamp
+* Users:
+  * End Entities
+  * Relying Parties
 </div>
 
 ---
@@ -748,24 +726,24 @@ Hybrid Cryptosystems - **VERY** Simplified
 
 # Pretty Good Privacy (PGP)/GNU Privacy Guard (GPG)
 ## Encryption Process
-| Alice Writes a Message & Creates a Random Key | Alice Encrypts The Random Key With Bob's Public Key | Alice Encrypts the Message with the Random Key | Alice Combines the Encrypted Message and Key And Sends to Bob |
+| Alice Writes a Message & Creates a Session Key | Alice Encrypts the Message with the Session Key | Alice Encrypts The Session Key With Bob's Public Key |  Alice Combines the Encrypted Message and Session Key And Sends to Bob |
 | - | - | - | - | 
-| Message:<br>Hello, Anti-Cast!<br>Key:<br>4dyea1wo|Encrypted Key:<br>7tjtf57d|Encrypted Message:<br>Fcjjm, Ylrg-Ayqr!|Encrypted Message:<br>Fcjjm, Ylrg-Ayqr!<br>Encrypted Key:<br>7tjtf57d|
+| Message:<br>"Hello, CodeMash!"<br>Session Key:<br>4dyea1wo | Encrypted Message:<br>"Fcjjm, YlrgAyqr!" | Encrypted<br>Session Key:<br>7tjtf57d | Encrypted Message:<br>"Fcjjm, YlrgAyqr!"<br>Encrypted Key:<br>7tjtf57d|
 
 ---
 
 # PGP/GPG
 ## Decryption Process
-| Bob Receives the Encrypted Package | Bob Decrypts The Random Key With His Private Key | Bob Decrypts the Message with the Random Key | 
+| Bob Receives the Encrypted Package | Bob Decrypts The Session Key With His Private Key | Bob Decrypts the Message with the Session Key | 
 | - | - | - |
-|Encrypted Message:<br>Fcjjm, Ylrg-Ayqr!<br>Encrypted Key:<br>7tjtf57d|Decrypted Key:<br>4dyea1wo|Decrypted Message:<br>Hello, Anti-Cast!|
+|Encrypted Message:<br>"Fcjjm, YlrgAyqr!"<br>Encrypted Key:<br>7tjtf57d|Decrypted Key:<br>4dyea1wo|Decrypted Message:<br>"Hello, CodeMash!"|
 
 ---
 
 # Secure Sockets Layer (SSL)/Transport Layer Security (TLS)
 | Client Contacts Server via HTTPS | Server Sends Certificate for Client to Validate | Server and Client Agree on a Session Key (Diffie-Helman) | Data Stream is Encrypted with Session Key |
 | - | - | - | - |
-| https://dotdot.horse | Name:<br>dotdot.horse<br>Issuer:<br>CA<br>Signature:<br>Signature | ![h:250](images/DH.png) | ![h:250](images/Ciphertext.gif)
+| [dotdot.horse](https://dotdot.horse) | Name: dotdot.horse<br>Issuer: CA<br>Signature: Signature | ![h:250](images/DH.png) | ![h:250](images/Ciphertext.gif)
 
 ---
 
@@ -801,26 +779,25 @@ Hybrid Cryptosystems - **VERY** Simplified
 
 ---
 
-![bg right:31% 80%](images/Repo.png)
+![bg right:46% 80%](images/Repo.png)
 # Resources
-https://github.com/jakehildreth/PKIFoundations
+[github.com/jakehildreth/CodeMash26](https://github.com/jakehildreth/CodeMash26)
 
 # Links
-Cetacean Cipher: https://www.a.tools/Tool.php?Id=389
-CyberChef: https://gchq.github.io/CyberChef
-ROT13: https://rot13.com
-
-# Image Credits
-https://github.com/jakehildreth/PKIFoundations/blob/main/images/images.md
+Cetacean Cipher: [a.tools/Tool.php?Id=389](https://www.a.tools/Tool.php?Id=389)
+CyberChef: [gchq.github.io/CyberChef](https://gchq.github.io/CyberChef)
+Caesar Cipher: [rot13.com](https://rot13.com)
 
 ---
+<!-- _header: "" -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
 
-![bg right:31% 80%](images/QR.png)
-# Thanks! 
+![bg right:46% 80%](images/QR.png)
+# Thanks, CodeMash!
 
-| Find | Jake | Tyler |
-| - | - | - |
-| LinkedIn | [/in/jakehildreth](https://linkedin.com/in/jakehildreth) | [/in/thetylerjacobs/](https://linkedin.com/in/thetylerjacobs/) |
-| GitHub | [jakehildreth](https://github.com/jakehildreth) | [ActiveDirectoryKC](https://github.com/ActiveDirectoryKC)  |
-| Reddit | **no.** | [/u/poolmanjim](https://reddit.com/u/poolmanjim) |
-| Site | [jakehildreth.com](https://jakehildreth.com) | [activedirectorykc.net](https://activedirectorykc.net)| 
+| Find | Me |
+| - | - |
+| LinkedIn | [linkedin.com/in/jakehildreth](https://linkedin.com/in/jakehildreth) |
+| GitHub | [github.com/jakehildreth](https://github.com/jakehildreth) |
+| Site | [jakehildreth.com](https://jakehildreth.com) |
