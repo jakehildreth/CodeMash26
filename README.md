@@ -10,4 +10,4 @@ https://raw.github.com/jakehildreth/CodeMash26/main/Slides.pdf
 * ROT13: https://rot13.com
 
 # Image Credits
-https://github.com/jakehildreth/PKIFoundations/blob/main/images/images.md
+https://github.com/jakehildreth/CodeMash26/blob/main/images/images.md
