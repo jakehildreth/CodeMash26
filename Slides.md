@@ -30,7 +30,21 @@ style: |
 <!-- _footer: "" -->
 <!-- _paginate: false -->
 ![bg left](images/LegoLocks.webp)
-# PKI Unlocked:<br>**A No-Math Primer for Builders**
+# PKI Unlocked:<br>**A No-Math<br>Primer for Builders**
+
+### Jake Hildreth<br>[jakehildreth.com](https://jakehildreth.com)
+<br>
+
+Code Mash 2026-01-15
+![w:200](images/codemash-logo.png)
+
+---
+
+<!-- _header: "" -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
+![bg left](images/LegoLocks.webp)
+# PKI Unlocked:<br>**An** Almost **No-Math<br>Primer for Builders**
 
 ### Jake Hildreth<br>[jakehildreth.com](https://jakehildreth.com)
 <br>
@@ -76,7 +90,7 @@ PowerShell + Identity & Access
 * Cryptocurrency
 * Key Exchange
 * MAC/HMAC
-* Algorithms
+* Specifics of Algorithms
 </div>
 
 <div class="col">
@@ -256,7 +270,7 @@ Secret or nah?
 
 # Encoding
 - Not intended to remain secret
-* that is, no **Confidentiality**
+* That is, no **Confidentiality**
 </div>
 
 <div class='col'>
@@ -353,10 +367,8 @@ Pretty much all cryptography before the 1970s
 <div class='col'>
 
 ## Cons
-* Keys must be pre-shared via a secure channel before communication
-  - Difficult!
+* Keys must be pre-shared via a secure channel **before** communication
 * One key per communication group
-  - Key management nightmare
 * Does not:
   * protect **Integrity**
   * ensure **Non-Repudiation**
@@ -616,7 +628,14 @@ with her **private** key
 
 <!-- _class: lead -->
 # **Certificates**
-Public Key and Attributes, Signed... by someone!
+Public Key and Attributes, Signed...
+
+---
+
+<!-- _class: lead -->
+# **Certificates**
+Public Key and Attributes, Signed...
+by someone!
 
 ---
 
@@ -772,7 +791,7 @@ Hybrid Cryptosystems - **VERY** Simplified
 * Hashing is not reversible
 * Signing combines hashing and encryption to provide non-repudiation
 * Certificates bind<br>an identity to a public key
-* PKI solves a lot of problems...<br>but at a cost
+* PKI solves a lot of problem with crytpography... but at a cost
 * Most modern cryptosystems combine symmetric and asymmetric encryption, hashing, signing, and certificates!
 
 </div>
@@ -789,9 +808,6 @@ CyberChef: [gchq.github.io/CyberChef](https://gchq.github.io/CyberChef)
 Caesar Cipher: [rot13.com](https://rot13.com)
 
 ---
-<!-- _header: "" -->
-<!-- _footer: "" -->
-<!-- _paginate: false -->
 
 ![bg right:46% 80%](images/QR.png)
 # Thanks, CodeMash!
